@@ -1,24 +1,47 @@
-# README
+# FireSale - API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a website that allows sole business owners to log their inventory of products and services which they wish to sell. 
 
-Things you may want to cover:
+## Screenshots
 
-* Ruby version
+![Screenshot 1](https://drive.google.com/file/d/1TTyabuOlM9LHg-FPNPUaMamGj5SNn_0Y/view?usp=sharing)
 
-* System dependencies
+## Technology used
 
-* Configuration
+Built with: 
+* Ruby on Rails API Back-end
+* Javascript React / Redux Front-end
+* React-Bootstrap (for styling) 
 
-* Database creation
+## Features
 
-* Database initialization
+* Allows for product / service name, description, price and image in listings
+* Users can mark products as sold and delete them       
 
-* How to run the test suite
+## Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+To install this repository simply clone both the client repo (this one) and the rails backend repo by running: 
 
-* Deployment instructions
+```
+git clone https://github.com/Kish-Siva-1/firesale-client.git
+git clone https://github.com/Kish-Siva-1/firesale-api.git
+```
 
-* ...
+Open the file by running each of the commands below in a new terminal: 
+
+1. `cd firesale-client/`
+2. `cd firesale-api/`
+
+Then install the relevant dependencies with:  
+
+* `npm install` (for JS)
+* `bundle install` (for Ruby on Rails)
+
+Finally run both by using: 
+
+* `npm start` (for JS)
+* `rails s` (for Ruby on Rails)
+
+## License
+
+MIT © Kish-Siva-1 
