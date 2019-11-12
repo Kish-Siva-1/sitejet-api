@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_11_140353) do
+ActiveRecord::Schema.define(version: 2019_11_12_185929) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,6 +18,35 @@ ActiveRecord::Schema.define(version: 2019_11_11_140353) do
   create_table "lists", force: :cascade do |t|
     t.string "native_language"
     t.string "foreign_language"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.string "price"
+    t.string "description"
+    t.boolean "sold"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "imglink"
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.string "name"
+    t.string "price"
+    t.string "description"
+    t.boolean "sold"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "imglink"
+  end
+
+  create_table "tests", force: :cascade do |t|
+    t.string "native_language"
+    t.string "foreign_language"
+    t.string "foreign_language_attempt"
+    t.boolean "check"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

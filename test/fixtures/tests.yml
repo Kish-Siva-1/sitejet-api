@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  native_language: MyString
+  foreign_language: MyString
+  foreign_language_attempt: MyString
+  check: false
+
+two:
+  native_language: MyString
+  foreign_language: MyString
+  foreign_language_attempt: MyString
+  check: false
